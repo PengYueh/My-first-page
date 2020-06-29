@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-first-page</title>
+    <!-- CSS -->
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/vender/normalize_css/normalize.css">
+    <!-- vender -->
+    <link rel="stylesheet" href="./assets/vender/bootstrap_4-grid/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/vender/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/vender/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="./assets/vender/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css"> -->
+    <!-- custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/all.js"></script>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="dark-mask"></div>
+        <div class="login-entry">
+            <div class="login-homepage">
+                <div class="entry-section">
+                    <img src="./assets/image/login_image.jpg" alt="">
+                </div>
+                <div class="welcome-message-section">
+                    <div class="welcome-message">
+                        <span>現在加入會員</br>72 小時內首次購物享 95 折優惠！</span>
+                    </div>
+                </div>
+                <div class="login-section">
+                    <div class="login-section-container">
+                        <div class="entry__label">用以下帳號繼續</div>
+                        <div class="entry__icon-btn-group">
+                            <div class="entry__icon-btn">
+                                <a href="" class="facebook"></a>
+                            </div>
+                            <div class="entry__icon-btn">
+                                <a href="" class="line"></a>
+                            </div>
+                            <div class="entry__icon-btn">
+                                <a href="" class="google"></a>
+                            </div>
+                            <div class="entry__icon-btn">
+                                <a href="" class="twitter"></a>
+                            </div>
+                        </div>
+                        <div class="entry__text">
+                            <span>或用 Pinkoi 帳號</span>
+                        </div>
+                        <div class="entry__btn-group">
+                            <a href="#!" class="btn btn--secondary btn--lg btn-fullwidth btn-login">登入</a>
+                            <a href="#!" class="btn btn--secondary btn--lg btn-fullwidth">註冊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-page">
+                <div class="logo">
+                    <a href="#!"></a>
+                </div>
+                <div class="title">用 Pinkoi 帳號登入</div>                   
+                <form action="" class="form">
+                    <div class="input_group form__item">
+                        <i class="far fa-user"></i>
+                        <input type="text" placeholder="Pinkoi 帳號">
+                    </div>                                                                            
+                    <div class="input_group form__item">
+                        <i class="fas fa-unlock-alt"></i>
+                        <input type="password" placeholder="密碼">
+                    </div>  
+                    <div class="input_group form__item form__item--center">
+                        <input class="btn btn--sm btn-fullwidth"  type="submit" value="登入">                                   
+                    </div>                             
+                </form>
+                <div class="text">
+                    <p class="cursor-pointer form__item">忘記密碼 / 重寄認證信</p>
+                    <p class=" form__item">還不是會員嗎？ <a href="#!">立刻註冊新帳號</a></p>
+                    <a href="#!" class="last-page">回上一頁</a>    
+                                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="header-top">
+                        <a href="#popup-menu" class="menu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <a href="#!" class="logo"></a>
+                        <div id="search-bar" class="header-search">
+                            <form id="serch-bar" action="" class="search-bar">
+                                <input type="search" placeholder="搜尋好設計" class="keyword">
+                                <input type="submit" value="搜尋" class="search-btn">
+                            </form>
+                            <div class="trend">
+                                <a href="#!">收納</a>
+                                <a href="#!">新品文具</a>
+                                <a href="#!">畢業禮物</a>
+                                <a href="#!">飾品 8 折</a>
+                                <a href="#!">apple watch</a>
+                                <a href="#!">錶帶</a>
+                                <a href="#!">新開館優惠</a>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <a href="#!" class="tab">我要開設計館</a>
+                            <a href="#search-bar" class="search-icon">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="#!" class="login">登入/註冊</a>
+                            <a href="#!" class="cart"></a>
+                        </div>
+                    </div>                    
+                        <ul id="popup-menu" class="nav">
+                                         
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">主題企劃</a>
+                            </li>                             
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">配件飾品</a>
+                            </li>
+                            <div class="nav-second">
+                                <div class="item-col">
+                                    <ul>
+                                        <li class="sub-title">飾品</li>
+                                        <li>耳環/耳夾</li>
+                                        <li>手鍊/手環</li>
+                                        <li>戒指</li>
+                                        <li>腳鍊/腳環</li>
+                                        <li>胸針</li>
+                                        <li>徽章/別針</li>
+                                    </ul>
+                                </div>
+                                <div class="item-col">
+                                    <ul>
+                                        <li class="sub-title">手錶</li>
+                                        <li>女錶</li>
+                                        <li>男錶/中性錶</li>
+                                        <li>對錶/情侶錶</li>
+                                        <li>腳鍊/腳環</li>
+                                        <li>錶帶</li>
+                                    </ul>
+                                </div>
+                                <div class="item-col">
+                                    <ul>
+                                        <li class="sub-title">服飾配件</li>
+                                        <li>帽子</li>
+                                        <li>手套</li>
+                                        <li>圍巾/披肩</li>
+                                        <li>絲巾</li>
+                                        <li>腰帶/皮帶</li>
+                                    </ul>
+                                </div>
+                                <div class="item-col">
+                                    <a href="#!" class="banner">
+                                        <div class="image">
+                                            <img src="https://cdn04.pinkoi.com/pinkoi.site/home/subcategory_banners_v2/203.jpg" alt="">
+                                        </div>
+                                        <div class="text">耳環/耳夾</div>
+                                    </a>
+                                </div>
+                                <div class="item-col">
+                                    <a href="#!" class="banner">
+                                        <div class="image">
+                                            <img src="https://cdn04.pinkoi.com/pinkoi.site/home/subcategory_banners_v2/205.jpg" alt="">
+                                        </div>
+                                        <div class="text">手鍊/手環</div>
+                                    </a>
+                                </div>
+                            </div>    
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">居家生活</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">包包提袋</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">衣著良品</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">文具卡片</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">所有分類</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">亞洲設計</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link">探索更多</a>
+                            </li>
+                            <a href="#!" class="close-btn">
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </ul>
+                    
+                    
+                </div>
+
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- start main -->
+        <section class="main">
+            <!-- start jumbotron -->
+            <div class="jumbotron">
+                <div class="owl-carousel jumbo owl-theme-1"> 
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1591240036_cp8UwM_720x405.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1591844493_RkcuzC_1152x648.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1592187397_C9kMsE_576x324.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1591240036_cp8UwM_720x405.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1591844493_RkcuzC_1152x648.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#!">
+                            <img src="https://cdn04.pinkoi.com/pinkoi.site/clickables/herobanner/1592187397_C9kMsE_576x324.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end jumbotron -->
+            <div class="section section_1">
+                <div class="container">
+                    <div class="section-title">編輯嚴選</div>   
+                    <div class="owl-carousel sec_1 owl-theme-2">                
+                                  
+                        <div class=" product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>            
+                        <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                        </div>    
+                        <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                        </div>
+                        <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                        </div>    
+                        <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                        </div>
+                        <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                        </div>
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                    </div>     
+                        
+                    </div>        
+                     
+                    </div>
+                </div>
+            </div>
+           
+            <div class="section section_3 recommend-content">
+                <div class="container">
+                    <div class="section-title">閱讀好設計</div>
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#!" class="recommend-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
+                                </div>
+                                <div class="preview">
+                                    <h4 class="title">Pinkoi Fashion 特別企劃「理想風格交易所」——用時間進行一場自己決定價值的交易</h4>
+                                    <p class="para">
+                                        Pinkoi Fashion 邀請大家進入「理想風格交易所」，在交易員的引領之下進一步評估選擇，從 20 家來自台灣、亞洲的設計品牌，去深入挖掘關於價值的可能性。</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#!" class="recommend-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
+                                </div>
+                                <div class="preview">
+                                    <h4 class="title">Pinkoi Fashion 特別企劃「理想風格交易所」——用時間進行一場自己決定價值的交易</h4>
+                                    <p class="para">
+                                        Pinkoi Fashion 邀請大家進入「理想風格交易所」，在交易員的引領之下進一步評估選擇，從 20 家來自台灣、亞洲的設計品牌，去深入挖掘關於價值的可能性。</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#!" class="recommend-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
+                                </div>
+                                <div class="preview">
+                                    <h4 class="title">Pinkoi Fashion 特別企劃「理想風格交易所」——用時間進行一場自己決定價值的交易</h4>
+                                    <p class="para">
+                                        Pinkoi Fashion 邀請大家進入「理想風格交易所」，在交易員的引領之下進一步評估選擇，從 20 家來自台灣、亞洲的設計品牌，去深入挖掘關於價值的可能性。</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section section_4 section-bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="theme-card">
+                                <a href="#!" class="theme-card-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/plant.jpg');"></div>
+                                    </div>
+                                    <div class="info">
+                                        <h2 class="title">療癒居家｜綠意植栽</h2>
+                                        <p class="para">今年夏天，為居家環境增添一點盎然綠意吧！療癒系列植栽等你帶回家。</p>
+                                        <button class="btn btn--primary btn--lg">想看看</button>
+                                    </div>
+                                </a> 
+                            </div>   
+                        </div>
+                        <div class="col-lg-6  col-md-12 col-sm-12">
+                            <div class="theme-card" >
+                                <a href="#!" class="theme-card-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/plant.jpg');"></div>
+                                    </div>
+                                    <div class="info">
+                                        <h2 class="title">療癒居家｜綠意植栽</h2>
+                                        <p class="para">今年夏天，為居家環境增添一點盎然綠意吧！療癒系列植栽等你帶回家。</p>
+                                        <button class="btn btn--primary btn--lg">想看看</button>
+                                    </div>
+                                </a> 
+                            </div>   
+                        </div>
+                    </div>
+                </div> 
+            </div>         
+        
+        <div class="section section_5">
+            <div class="container">
+                <div class="section-title">新品上架</div>                 
+                <div class="row card-container">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section section_6">
+            <div class="container">
+                <div class="section-title">每日新星</div>
+                <div class="row ">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="new-product-card">
+                            <div class="image-container">
+                                <div class="image"
+                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
+                            </div>
+                            <div class="info">
+                                <h4 class="title">123456</h4>
+                                <div class="rate">
+                                </div>
+                                <button class="btn btn--primary btn--sm">follow</button>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="new-product-card">
+                            <div class="image-container">
+                                <div class="image"
+                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
+                            </div>
+                            <div class="info">
+                                <h4 class="title">123456</h4>
+                                <div class="rate">
+                                </div>
+                                <button class="btn btn--primary btn--sm">follow</button>                                
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="new-product-card">
+                            <div class="image-container">
+                                <div class="image"
+                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
+                            </div>
+                            <div class="info">
+                                <h4 class="title">123456</h4>
+                                <div class="rate">
+                                </div>
+                                <button class="btn btn--primary btn--sm">follow</button>
+                                
+                            </div>
+                        </div>                       
+                    </div>                    
+                 
+                </div>
+            </div>
+        </div>
+        <div class="section section_7">
+            <div class="container">
+                <div class="section-title">免運專區</div>                 
+                <div class="row card-container">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <div class="product">
+                            <a href="#!" class="product-link">
+                                <div class="image-container">
+                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                </div>    
+                                <span class="tag">Hot</span>
+                                <h1 class="name">Leather Tots Bag</h1>
+                            </a> 
+                            <div class="info">
+                                <a href="#!" class="store">Waralee's Day</a>
+                                <p class="price">NT$ 850</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="section section_9 section-bg-gray">
+            <div class="container">
+                <div class="row block-group">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="block">
+                            <div class="image">
+                                <img src="./assets/image/1_v3.svg" alt="">
+                            </div>
+                            <h4 class="title">集結全球好設計</h4>
+                            <p class="para">販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
+                        </div>   
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="block">                            
+                            <div class="image">
+                                <img src="./assets/image/2_v3.svg" alt="">
+                            </div>
+                            <h4 class="title">優質獨立創作者</h4>
+                            <p class="para">串連全球優質設計師群，直接與他們溝通購買專屬你的設計品。</p>                             
+                        </div>   
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="block">
+                            <div class="image">
+                                <img src="./assets/image/3_v3.svg" alt="">
+                                </div>
+                            <h4 class="title">安心消費有保障</h4>
+                            <p class="para">專業工程團隊時時把關，保障你的個資安全。</p>
+                            
+                        </div>   
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>   
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer section-bg-gray">
+        <div class="container">
+            <div class="footer__links-group">
+                    <div class="links">
+                        <h6 class="title">購買</h6>
+                        <ul>
+                            <li><a href="#!">所有商品分類</a></li>
+                            <li><a href="#!">品品學堂</a></li>
+                            <li><a href="#!">找靈感</a></li>
+                            <li><a href="#!">逛櫥窗</a></li>
+                            <li><a href="#!">設計誌</a></li>
+                            <li><a href="#!">Pinkoi 禮物卡</a></li>
+                            <li><a href="#!">下載APP</a></li>
+                            <li><a href="#!">客人問與答</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="links">
+                        <h6 class="title">販售</h6>
+                        <ul>
+                            <li><a href="#!">我要開設計館</a></li>
+                            <li><a href="#!">設計館問與答</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="links">
+                        <h6 class="title">幫助/政策</h6>
+                        <ul>
+                            <li><a href="#!">問與答</a></li>
+                            <li><a href="#!">大宗採購</a></li>
+                            <li><a href="#!">訊息公告</a></li>
+                            <li><a href="#!">服務條款</a></li>
+                            <li><a href="#!">退貨政策</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="links">
+                        <h6 class="title">關於Pinkoi</h6>
+                        <ul>
+                            <li><a href="#!">關於我們</a></li>
+                            <li><a href="#!">媒體報導</a></li>
+                            <li><a href="#!">工作機會</a></li>
+                            <li><a href="#!">全新Pinkoi</a></li>                        
+                        </ul>                        
+                    </div>
+                    <div class="links share">
+                        <h6 class="title">追蹤Pinkoi</h6>
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab fa-line"></i>
+                                    <span>Line</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <i class="fab fa-youtube"></i>
+                                    <span>Youtube</span>
+                                </a>
+                            </li>                        
+                        </ul>                        
+                    </div>
+            </div>
+            <div class="footer__copyright">
+                <div>
+                    <a href="#!" class="logo"></a>
+                    <p class="slogan">Design the way you are.</p>
+                </div>
+                <div class="right">
+                    <p class="copyright">© 2020 Pinkoi. All Rights Reserved. </p>
+                    <a href="#!" class="language">
+                        <i class="fas fa-globe"></i>
+                        <span>繁體中文(台灣)</span>
+                    </a>                       
+                </div>
+            </div>
+        </div>
+            
+            
+    </footer>
+    <!-- end footer -->
+
+    </div>
+</body>
+<!-- JS -->
+<!-- Jquery libarary -->
+<script src="./assets/vender/jquery/jquery-3.5.1.min.js"></script>
+<!-- Plugins -->
+<script src="./assets/vender/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<!-- Custom & initialization -->
+<script>
+$(document).ready(function(){
+    // owl-carousel initilization
+    $('.owl-carousel.sec_1').owlCarousel({
+        responsive:{
+            0:{
+                // items: 2
+            },
+            769:{
+                items: 6
+            }
+        },
+        nav: true,
+        dots: false,
+        margin: 32,
+        loop: true,
+        
+    })
+    $('.owl-carousel.jumbo').owlCarousel({
+        responsive:{
+            0:{
+                // items: 2
+            },
+            769:{
+                items: 2
+            }
+        },
+        center: true,
+        nav: true,
+        dots: true,
+        margin: 24,
+        loop: true,
+        
+        
+    })
+
+
+})    
+</script>
+</html>
