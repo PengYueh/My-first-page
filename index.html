@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./assets/vender/fontawesome-free-5.13.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/vender/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="./assets/vender/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css"> -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.1/firebase-ui-auth.css" />
     <!-- custom -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/all.js"></script>
+    
 </head>
 <body>
     <div class="login-wrapper">
@@ -34,8 +34,10 @@
                 <div class="login-section">
                     <div class="login-section-container">
                         <div class="entry__label">用以下帳號繼續</div>
+                        
                         <div class="entry__icon-btn-group">
-                            <div class="entry__icon-btn">
+                            <div id="firebaseui-auth-container"></div>
+                            <!-- <div class="entry__icon-btn">
                                 <a href="" class="facebook"></a>
                             </div>
                             <div class="entry__icon-btn">
@@ -46,7 +48,7 @@
                             </div>
                             <div class="entry__icon-btn">
                                 <a href="" class="twitter"></a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="entry__text">
                             <span>或用 Pinkoi 帳號</span>
@@ -118,7 +120,8 @@
                             <a href="#search-bar" class="search-icon">
                                 <i class="fas fa-search"></i>
                             </a>
-                            <a href="#!" class="login">登入/註冊</a>
+                            <a id="login" class="login">登入/註冊</a>
+                            <a id="logout" class="login">登出</a>
                             <a href="#!" class="cart"></a>
                         </div>
                     </div>                    
@@ -351,9 +354,8 @@
                     </div>        
                      
                     </div>
-                </div>
-            </div>
-           
+               
+            </div>           
             <div class="section section_3 recommend-content">
                 <div class="container">
                     <div class="section-title">閱讀好設計</div>
@@ -437,293 +439,290 @@
                         </div>
                     </div>
                 </div> 
-            </div>         
-        
-        <div class="section section_5">
-            <div class="container">
-                <div class="section-title">新品上架</div>                 
-                <div class="row card-container">
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+            </div>
+            <div class="section section_5">
+                <div class="container">
+                    <div class="section-title">新品上架</div>                 
+                    <div class="row card-container">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section section_6">
-            <div class="container">
-                <div class="section-title">每日新星</div>
-                <div class="row ">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="new-product-card">
-                            <div class="image-container">
-                                <div class="image"
-                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
-                            </div>
-                            <div class="info">
-                                <h4 class="title">123456</h4>
-                                <div class="rate">
+            <div class="section section_6">
+                <div class="container">
+                    <div class="section-title">每日新星</div>
+                    <div class="row ">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="new-product-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
                                 </div>
-                                <button class="btn btn--primary btn--sm">follow</button>                                
-                            </div>
-                        </div>                        
+                                <div class="info">
+                                    <h4 class="title">123456</h4>
+                                    <div class="rate">
+                                    </div>
+                                    <button class="btn btn--primary btn--sm">follow</button>                                
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="new-product-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title">123456</h4>
+                                    <div class="rate">
+                                    </div>
+                                    <button class="btn btn--primary btn--sm">follow</button>                                
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="new-product-card">
+                                <div class="image-container">
+                                    <div class="image"
+                                        style="background-image: url('./assets/image/recommend.jpg');"></div>
+                                </div>
+                                <div class="info">
+                                    <h4 class="title">123456</h4>
+                                    <div class="rate">
+                                    </div>
+                                    <button class="btn btn--primary btn--sm">follow</button>
+                                    
+                                </div>
+                            </div>                       
+                        </div>                    
+                    
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="new-product-card">
-                            <div class="image-container">
-                                <div class="image"
-                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
-                            </div>
-                            <div class="info">
-                                <h4 class="title">123456</h4>
-                                <div class="rate">
+                </div>
+            </div>
+            <div class="section section_7">
+                <div class="container">
+                    <div class="section-title">免運專區</div>                 
+                    <div class="row card-container">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
                                 </div>
-                                <button class="btn btn--primary btn--sm">follow</button>                                
                             </div>
-                        </div>                       
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="product">
+                                <a href="#!" class="product-link">
+                                    <div class="image-container">
+                                        <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
+                                    </div>    
+                                    <span class="tag">Hot</span>
+                                    <h1 class="name">Leather Tots Bag</h1>
+                                </a> 
+                                <div class="info">
+                                    <a href="#!" class="store">Waralee's Day</a>
+                                    <p class="price">NT$ 850</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="new-product-card">
-                            <div class="image-container">
-                                <div class="image"
-                                    style="background-image: url('./assets/image/recommend.jpg');"></div>
-                            </div>
-                            <div class="info">
-                                <h4 class="title">123456</h4>
-                                <div class="rate">
+                </div>
+            </div>        
+            <div class="section section_9 section-bg-gray">
+                <div class="container">
+                    <div class="row block-group">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="block">
+                                <div class="image">
+                                    <img src="./assets/image/1_v3.svg" alt="">
                                 </div>
-                                <button class="btn btn--primary btn--sm">follow</button>
+                                <h4 class="title">集結全球好設計</h4>
+                                <p class="para">販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="block">                            
+                                <div class="image">
+                                    <img src="./assets/image/2_v3.svg" alt="">
+                                </div>
+                                <h4 class="title">優質獨立創作者</h4>
+                                <p class="para">串連全球優質設計師群，直接與他們溝通購買專屬你的設計品。</p>                             
+                            </div>   
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="block">
+                                <div class="image">
+                                    <img src="./assets/image/3_v3.svg" alt="">
+                                    </div>
+                                <h4 class="title">安心消費有保障</h4>
+                                <p class="para">專業工程團隊時時把關，保障你的個資安全。</p>
                                 
-                            </div>
-                        </div>                       
-                    </div>                    
-                 
-                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div> 
             </div>
-        </div>
-        <div class="section section_7">
-            <div class="container">
-                <div class="section-title">免運專區</div>                 
-                <div class="row card-container">
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-6">
-                        <div class="product">
-                            <a href="#!" class="product-link">
-                                <div class="image-container">
-                                    <div class="image" style="background-image: url('./assets/image/leather bag.jpg');"></div>
-                                </div>    
-                                <span class="tag">Hot</span>
-                                <h1 class="name">Leather Tots Bag</h1>
-                            </a> 
-                            <div class="info">
-                                <a href="#!" class="store">Waralee's Day</a>
-                                <p class="price">NT$ 850</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        
-        <div class="section section_9 section-bg-gray">
-            <div class="container">
-                <div class="row block-group">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="block">
-                            <div class="image">
-                                <img src="./assets/image/1_v3.svg" alt="">
-                            </div>
-                            <h4 class="title">集結全球好設計</h4>
-                            <p class="para">販售超過百萬件獨特商品，透過好設計實現心中的理想生活！</p>
-                        </div>   
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="block">                            
-                            <div class="image">
-                                <img src="./assets/image/2_v3.svg" alt="">
-                            </div>
-                            <h4 class="title">優質獨立創作者</h4>
-                            <p class="para">串連全球優質設計師群，直接與他們溝通購買專屬你的設計品。</p>                             
-                        </div>   
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="block">
-                            <div class="image">
-                                <img src="./assets/image/3_v3.svg" alt="">
-                                </div>
-                            <h4 class="title">安心消費有保障</h4>
-                            <p class="para">專業工程團隊時時把關，保障你的個資安全。</p>
-                            
-                        </div>   
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </section>   
+        </section>   
     <!-- end main -->
-
     <!-- start footer -->
     <footer class="footer section-bg-gray">
         <div class="container">
@@ -815,7 +814,6 @@
             
     </footer>
     <!-- end footer -->
-
     </div>
 </body>
 <!-- JS -->
@@ -839,8 +837,7 @@ $(document).ready(function(){
         nav: true,
         dots: false,
         margin: 32,
-        loop: true,
-        
+        loop: true,        
     })
     $('.owl-carousel.jumbo').owlCarousel({
         responsive:{
@@ -855,12 +852,37 @@ $(document).ready(function(){
         nav: true,
         dots: true,
         margin: 24,
-        loop: true,
-        
-        
+        loop: true,      
     })
-
-
 })    
 </script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+<script src="./assets/js/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/ui/4.5.1/firebase-ui-auth.js"></script>
+<script type="text/javascript">
+    // FirebaseUI config.
+    var uiConfig = {
+      signInSuccessUrl: '/index.html',
+      signInOptions: [
+        // Leave the lines as is for the providers you want to offer your users.
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+        firebase.auth.EmailAuthProvider.PROVIDER_ID,        
+      ],
+      // tosUrl and privacyPolicyUrl accept either url string or a callback
+      // function.
+      // Terms of service url/callback.
+    //   tosUrl: '/terms.html',
+      // Privacy policy url/callback.
+    //   privacyPolicyUrl:'/privacy.html',
+    };
+
+    // Initialize the FirebaseUI Widget using Firebase.
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // The start method will wait until the DOM is loaded.
+    ui.start('#firebaseui-auth-container', uiConfig);
+  </script>
+
+<script src="./assets/js/all.js"></script>
 </html>
